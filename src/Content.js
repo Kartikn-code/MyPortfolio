@@ -1,30 +1,24 @@
 import React from 'react'
-import profile from './images/1000079546.jpg'
-import resume from './images/KARTHIKEYAN S-resume (2).pdf'
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
+
+
+
 
 
 const Content = () => {
   return (
-    
-    <section className='content' data-aos="fade-down">
-        <div>
-        <h1 data-aos="fade-down">Hello this is Karthikeyan S</h1>
-            <div  data-aos="fade-up"className='intro'>
-        <p>Hi, I’m Karthikeyan S, a <span className='role'>Full Stack Developer </span>who loves building user-friendly web applications. I’m passionate about creating impactful digital experiences with clean, efficient code.</p>
-        <div className='resumebtn'>
-            <a href={resume} download>Get My resume</a>
-        </div>
-            </div>  
-            </div>
-             <div className='profile' data-aos="fade-up">
-        <img src={profile} alt='profile' width="330px" height="330px" data-aos="zoom-out"></img>
-            </div>
-       
-       
- 
-
+    <section className='content container w-100'>
+       <h1  className='container-fluid col-* justify-content-center text-center fs-10 fs-sm-1 ' data-aos="zoom-in">Full Stack Developer and a little bit of <span className='content1'>Everything</span></h1>
+   
+  <div className='container-fluid col-* text-center ms-10-md-0 ms-3'>
+    <button className="learn-more">
+    <span className="circle" aria-hidden="true">
+      <span className="icon arrow"></span>
+    </span>
+     <span className="button-text ">Learn More</span>
+    </button>
+  </div>
     </section>
+ 
   )
 }
 
