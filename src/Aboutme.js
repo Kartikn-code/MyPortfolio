@@ -10,14 +10,8 @@ const Aboutme = () => {
     
             <div data-aos="fade-up"className='intro container-fluid col-sm-12 fs-1 fs-md-2 fs-sm-3 text-center'>
             <h1 className=" container-fluid col-sm-12 justify-content-center text-center fs-10 fs-sm-1"data-aos="fade-down">Hello,This is Karthikeyan S</h1>
-        <p className='text-center col-sm-12 container-fluid'>I am a <span className='role'>Full Stack Developer </span>who loves building user-friendly web applications. I'm passionate about creating impactful digital experiences with clean, efficient code.</p>
-           </div>    
-           
-      <div className='img-btn'>
-                  <div className='profile justify-content-center' data-aos="fade-up">
-                <img src={profile} alt='profile' width="300px" height="300px" data-aos="zoom-out"></img>
-                </div>
-                <div className='resumebtn'>
+        <p className='text-center col-sm-12 container-fluid w-100'>I am a <span className='role'>Full Stack Developer </span>who loves building user-friendly web applications. I'm passionate about creating impactful digital experiences with clean, efficient code.</p>
+        <div className='resumebtn'>
                 <a href={resume} download>Get My resume</a>
                 </div>
                 <div className='links container-fluid text-center' >
@@ -92,8 +86,16 @@ const Aboutme = () => {
     <div className="tooltip">Instagram</div>
   </li>
   
-</ul>
-</div>
+      </ul>
+    </div>
+           
+           </div>    
+           
+      <div className='img-btn'>
+                  <div className='profile justify-content-center' data-aos="fade-up">
+                <img src={profile} alt='profile' width="300px" height="280px" data-aos="zoom-out"></img>
+                </div>
+                
         </div>
      
    
