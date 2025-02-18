@@ -3,7 +3,7 @@ import './App.css';
 import Content from './Content';
 import Header from './Header';
 import Aboutme from './Aboutme';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Education from './Education';
 
 
 function App() {
@@ -12,6 +12,9 @@ function App() {
   <Header />
   <Content />
   <Aboutme />
+  <Education />
+
+
 
   </div> 
   

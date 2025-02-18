@@ -5,16 +5,22 @@ import resume from './images/KARTHIKEYAN S-resume (2).pdf'
 
 const Aboutme = () => {
   return (
-    <section className='aboutme' data-aos="fade-down">
-        <div>
-        <h1 className=" col-* ms-* fs-1 fs-md-2 fs-sm-3 text-center"data-aos="fade-down">Hello,This is Karthikeyan S</h1>
-            <div  data-aos="fade-up"className='intro container-fluid'>
-        <p className='text-center text-md-start col-sm-12 container-fluid min-vh-100'>I am a <span className='role'>Full Stack Developer </span>who loves building user-friendly web applications. I'm passionate about creating impactful digital experiences with clean, efficient code.</p>
-        <div className='resumebtn'>
-            <a href={resume} download>Get My resume</a>
-            
-        </div>
-        <div className='links container-fluid col-12 ml-2' >
+    <section className='aboutme container w-100' data-aos="fade-down">
+      
+    
+            <div data-aos="fade-up"className='intro container-fluid col-sm-12 fs-1 fs-md-2 fs-sm-3 text-center'>
+            <h1 className=" container-fluid col-sm-12 justify-content-center text-center fs-10 fs-sm-1"data-aos="fade-down">Hello,This is Karthikeyan S</h1>
+        <p className='text-center col-sm-12 container-fluid'>I am a <span className='role'>Full Stack Developer </span>who loves building user-friendly web applications. I'm passionate about creating impactful digital experiences with clean, efficient code.</p>
+           </div>    
+           
+      <div className='img-btn'>
+                  <div className='profile justify-content-center' data-aos="fade-up">
+                <img src={profile} alt='profile' width="300px" height="300px" data-aos="zoom-out"></img>
+                </div>
+                <div className='resumebtn'>
+                <a href={resume} download>Get My resume</a>
+                </div>
+                <div className='links container-fluid text-center' >
   {/* <!-- From Uiverse.io by wilsondesouza -->  */}
 <ul className="example-2 container col-12">
   <li className="icon-content">
@@ -73,7 +79,7 @@ const Aboutme = () => {
         width="16"
         height="16"
         fill="currentColor"
-        class="bi bi-instagram"
+        className="bi bi-instagram"
         viewBox="0 0 16 16"
         
       >
@@ -88,11 +94,14 @@ const Aboutme = () => {
   
 </ul>
 </div>
-            </div>  
-            </div>
-            <div className='profile w-25 h-5 p-2' data-aos="fade-up">
-                <img src={profile} alt='profile' width="300px" height="300px" data-aos="zoom-out"></img>
-            </div>
+        </div>
+     
+   
+        
+        
+       
+           
+            
   
             
 
