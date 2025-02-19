@@ -3,7 +3,7 @@ import './App.css';
 import Content from './Content';
 import Header from './Header';
 import Aboutme from './Aboutme';
-import Education from './Education';
+import Skills from './Skills';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
   <Header />
   <Content />
   <Aboutme />
-  <Education />
+  <Skills />
 
 
 
