@@ -9,9 +9,10 @@ const Header = () => {
     <ul className='subjects container col-12 fs-10 fs-md-3 fs-sm-1 justify-content-center text-center'>
         <li>Home</li>
         <li>About Me</li>
+        <li>Skills</li>
         <li>Projects</li>
         <li>Experience</li>
-        <li>Contact Me</li>
+        <li>Contact</li>
 
     </ul>
  
