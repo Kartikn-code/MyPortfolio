@@ -19,5 +19,12 @@ const Header = () => {
     </section>
   )
 }
+document.querySelectorAll('.subjects').forEach(subjects => {
+  subjects.addEventListener('click', event => {
+      event.preventDefault();
+      const targetSection = document.querySelector(`.${event.target.textContent.toLowerCase()}`);
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});
 
 export default Header
