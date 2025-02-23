@@ -3,6 +3,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 
 
 
+
 const data = [
   { name: 'HTML', Skills: 100 },
   { name: 'CSS', Skills: 90 },
@@ -17,7 +18,7 @@ const data = [
 export default function StyledChart() {
   return (
    
-    <div data-aos="flip-up"  className="graph skills container  fs-lg-1 fs-md-2 fs-sm-3 col-lg-12 col-md-12 col-sm-12 text-center justify-content-center "style={{ width: '60%', margin: '20px auto' }}>  {/* Controls overall width */}
+    <div data-aos="flip-up"  className="graphccontainer-fluid fs-lg-1 fs-md-2 fs-sm-3 col-lg-12 col-md-12 col-sm-12 text-center justify-content-center "style={{ width: '60%', margin: '20px auto' }}>  {/* Controls overall width */}
     <div></div>
     <ResponsiveContainer width="90%" height={300}>
       <LineChart data={data}>

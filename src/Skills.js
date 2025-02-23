@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Skills = () => {
   return (
    <section className='skills container text-center align-items-center'>
@@ -139,3 +140,4 @@ const Skills = () => {
 }
 
 export default Skills
+
