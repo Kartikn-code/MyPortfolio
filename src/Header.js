@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from './images/slovakia.png'
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -7,24 +8,21 @@ const Header = () => {
    <img src={logo} alt='logo' width="50px" height="50px"></img>
    
     <ul className='subjects container col-12 fs-10 fs-md-3 fs-sm-1 justify-content-center text-center'>
-        <li>Home</li>
-        <li>About Me</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Experience</li>
-        <li>Contact</li>
+      
+      <Link to="home" smooth={true} duration={10}>Home</Link>
+      <Link to="aboutme" smooth={true} duration={10}>About Me</Link>
+      <Link to="skills" smooth={true} duration={10}>Skills</Link>
+      <Link to="projects" smooth={true} duration={10}>Projects</Link>
+      <Link to="contact" smooth={true} duration={10}>Experience</Link>
+      <Link to="contact" smooth={true} duration={10}>Contact</Link>
+</ul>
 
-    </ul>
+  </section>
+  )};
+   
  
-    </section>
-  )
-}
-document.querySelectorAll('.subjects').forEach(subjects => {
-  subjects.addEventListener('click', event => {
-      event.preventDefault();
-      const targetSection = document.querySelector(`.${event.target.textContent.toLowerCase()}`);
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-  });
-});
+ 
+   
+  
+export default Header 
 
-export default Header

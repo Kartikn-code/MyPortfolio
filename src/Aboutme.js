@@ -5,7 +5,7 @@ import resume from './images/KARTHIKEYAN S-resume (2).pdf'
 
 const Aboutme = () => {
   return (
-    <section className='aboutme container w-100' data-aos="fade-down">
+    <section className='aboutme container w-100 h-100vh' data-aos="fade-down">
       
     
             <div data-aos="fade-up"className='intro container-fluid col-sm-12 fs-1 fs-md-2 fs-sm-3 text-center'>

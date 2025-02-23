@@ -4,7 +4,8 @@ import Content from './Content';
 import Header from './Header';
 import Aboutme from './Aboutme';
 import Skills from './Skills';
-import Chart from './Chart'
+import Chart from './Chart';
+import Projects from './Projects';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   <Aboutme />
   <Skills />
   <Chart />
+  <Projects />
 
 
 

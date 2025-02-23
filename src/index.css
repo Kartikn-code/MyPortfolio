@@ -5,9 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background:radial-gradient( rgb(183, 183, 211),rgb(255, 255, 255)); */
+  background:radial-gradient( rgb(183, 183, 211),rgb(255, 255, 255));
  
 
+}
+html{
+  scroll-behavior: smooth;
 }
 
  
@@ -24,6 +27,8 @@ code {
   gap: 30px;
   margin-right:30px;
   padding: 20px;
+  cursor: pointer;
+ 
 
 }
 .header img{
@@ -152,9 +157,10 @@ p span{
 .aboutme{
   display: flex;
   padding: 20px;
+  height: auto;
   width: auto;
   margin: auto;
-  height: auto;
+
   flex-direction: column;
   border-radius: 20px;
   box-shadow: 0px 10px 10px black;
@@ -598,6 +604,8 @@ svg.recharts-surface {
   background: linear-gradient(5deg, #8acba662 10%, #7dadc481 20%,#69c1bdb6 10%);
 
   padding: 10px;
+  filter: brightness(200%);
+  filter: contrast(100%);
   font-family: "Bebas Neue", serif;
   box-shadow: 0px 0px 10px 9px rgb(177, 173, 173);
   
@@ -611,10 +619,37 @@ svg.recharts-surface {
 }
 svg.recharts-surface {
   margin-left: 20px;
-  margin-top: 40px;
+  margin-top: 40px  ;
 }
-svg.recharts-surface:hover{
+/* svg.recharts-surface:hover{
   transform: translate(10px,-10px);
   transition: all 0.5s ease;
-  background-color: #c0cbd501;
+  filter: brightness(200%);
+  filter: contrast(300%);
+} */
+
+/* projects code here */
+.projects{
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+  .proj-cards{
+    flex-direction: column; /* Desktop */
+  }
+}
+
+.projects h1{
+  font-family: "Bebas Neue", serif;
+  font-size: 80px;
+}
+.proj1 img{
+  border-radius: 20px;
+  box-shadow: 10px 20px rgba(9, 9, 9, 0.591);
+}
+
+
+
+     
+    

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll';
 
 
 
@@ -14,7 +15,7 @@ const Content = () => {
     <span className="circle" aria-hidden="true">
       <span className="icon arrow"></span>
     </span>
-     <span className="button-text ">Learn More</span>
+     <Link to="aboutme" smooth={true} duration={10}><span className="button-text ">Learn More</span></Link>
     </button>
   </div>
     </section>
@@ -23,3 +24,4 @@ const Content = () => {
 }
 
 export default Content
+
