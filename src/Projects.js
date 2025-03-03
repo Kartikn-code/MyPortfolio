@@ -111,8 +111,8 @@
 
 import React, { useState } from 'react';
 import { SiWoocommerce } from "react-icons/si";
-import { FaGithub,FaDatabase, FaExternalLinkAlt, FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs,FaWordpress, FaBootstrap, } from 'react-icons/fa';
-import { SiTailwindcss,SiDjango, SiMongodb, SiFirebase, SiTypescript } from 'react-icons/si';
+import { FaGithub,FaDatabase, FaExternalLinkAlt, FaReact, FaHtml5, FaCss3Alt, FaJs,FaWordpress, FaBootstrap, } from 'react-icons/fa';
+import { SiTailwindcss,SiDjango } from 'react-icons/si';
 
 const ProjectCards = () => {
   // Project data
