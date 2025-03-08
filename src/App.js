@@ -8,6 +8,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Content from './Content';
 import BubbleEffect from './BubbleEffect';
+import Experience from './Experience';
 
 
 
@@ -25,6 +26,7 @@ function App() {
   <Skills />
   {/* <Chart /> */}
   <Projects />
+  <Experience/>
 
 
 
