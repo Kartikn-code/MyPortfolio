@@ -5,11 +5,14 @@ import Header from './Header';
 import Aboutme from './Aboutme';
 import Skills from './Skills';
 // import Chart from './Chart';
-import Projects from './Projects';
+
 import Content from './Content';
 import BubbleEffect from './BubbleEffect';
-import Experience from './Experience';
 
+import Carousal from './Carousal'; 
+// import GitHubStats from './Github';
+import Projectsection from './Project';
+import Experience from './Experience';
 
 
 
@@ -25,8 +28,11 @@ function App() {
   <Aboutme />
   <Skills />
   {/* <Chart /> */}
-  <Projects />
-  <Experience/>
+  <Projectsection />
+  <Carousal />
+  {/* <GitHubStats /> */}
+  <Experience />
+  
 
 
 
