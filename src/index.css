@@ -5,8 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background:linear-gradient(60deg, rgb(24, 2, 104)10%,rgba(57, 45, 134, 0.843)40%,#5449a0,#5e369f,#7c72ac,#030304a4);
+  /* background:linear-gradient(60deg, rgb(24, 2, 104) 10%, rgba(57, 45, 134, 0.843) 40%, #5449a0, #5e369f, #7c72ac, #030304a4); */
   /* background:radial-gradient(circle, #7944a2f8, #62478ec1,#8779cb91); */
+  /* background:linear-gradient(to right,#202020,#8b62c5,#242121); */
+  background:linear-gradient(to bottom,#000000,#e4e0e9,#242121);
 
 }
 html{
@@ -19,19 +21,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.subjects Link{
+  position: sticky;
+  top:0;
+  background-color: rgb(252, 0, 0);
+}
 /* header code here */
 .subjects{
   display: flex;
   list-style-type: none;
   font-family: "Oswald", sans-serif;
-  float: right;
+ 
   font-size: 20px;
-  color: white;
-  margin-top: -20px;
+  color: rgb(0, 213, 255);
+  margin-top: -40px;
   gap: 30px;
   margin-right:30px;
   padding: 20px;
   cursor: pointer;
+
+  position: sticky;
+    top: 0;
+    width: 100%;
+    
+    padding: 10px 0;
+    z-index: 1000; /* Ensure it stays above other content */
  
 
 }
@@ -53,7 +67,9 @@ code {
 /* aboutme code */
 .aboutme img{
   border-radius: 50%;
-/* margin: 10px 10px 0px 200px; */
+  /* margin: 10px 10px 0px 200px; */ 
+  /* Removed margin for better alignment */
+
 align-items: center;
 justify-content: center;
 
@@ -74,6 +90,7 @@ justify-content: center;
   margin-top: 20px;
   font-family: "Dancing Script", serif;
   font-size: 70px;
+  color: black;
 }
 p span{
   color: coral;
@@ -116,7 +133,9 @@ p span{
   width: 100%;
   display: flex;
    */
-/* } */
+  /* } */ 
+  /* Closing bracket for the .resumebtn class */
+
 .resumebtn a{
   text-decoration: none;
   font-weight: 600;
@@ -125,7 +144,8 @@ p span{
   color: black;
   padding: 20px;
   border-radius: 5px;
-  /* margin: 100px 0px 30px 50px ; */
+  /* margin: 100px 0px 30px 50px ; */ 
+  /* Adjusted margin for better spacing */
   scale: 0.9;
   height: 10px;
   align-items: center;
@@ -331,7 +351,7 @@ justify-content: center;
 
 .content h1{
   font-size: 85px;
-  color: rgb(42, 40, 40);
+  color: rgb(13, 216, 238);
   margin-top: 100px;
   justify-content: center;
   text-align: center;
@@ -377,7 +397,7 @@ button {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #282936;
+  background: #c22c68;
   border-radius: 1.625rem;
  }
  
@@ -387,7 +407,7 @@ button {
   top: 0;
   bottom: 0;
   margin: auto;
-  background: #fff;
+  background: #ffffff;
  }
  
  button.learn-more .circle .icon.arrow {
@@ -419,7 +439,7 @@ button {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
-  color: #282936;
+  color: #fffffe;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -431,12 +451,12 @@ button {
  }
  
  button:hover .circle .icon.arrow {
-  background: #fff;
+  background: #fffefe;
   transform: translate(1rem, 0);
  }
  
  button:hover .button-text {
-  color: #fff;
+  color: #f9f9f9;
  }
 
  /* From Uiverse.io by wilsondesouza */ 
@@ -603,6 +623,8 @@ font-weight:600;
   animation-delay: calc(var(--delay) * 0.2s);
  
 }
+
+
 @keyframes float{
   0%{
     transform:tranlateY(0);
@@ -654,7 +676,11 @@ svg.recharts-surface {
 
 /* projects code here */
 
-
+.projects h1{
+color: white;
+ 
+  
+}
 @media(max-width: 768px) {
   
   .proj1 img{
@@ -709,7 +735,15 @@ svg.recharts-surface {
 h1{
   font-size: 30px;
 }
-
+.hamburger{
+display: block;
+}
+.hamburger{
+  display: none;
+}
+section{
+  padding: 20px;
+}
 
 @media(min-width:768px) {
 .skillcontent{
@@ -741,7 +775,7 @@ h1{
   font-size: 80px;
   text-align: center;
   margin-top: 20px;
-  color: #000000;
+  color: #060606;
 
 }
 
@@ -850,10 +884,10 @@ font-size: 20px;
 }
 
 .project-card {
-background: rgb(3, 60, 157);
+background: rgb(126, 147, 219);
 backdrop-filter: blur(400px);
 color: white;
-  border: 1px solid #2d4b68; /* Border for cards */
+ 
   border-radius: 8px; /* Rounded corners */
   padding: 20px;
   margin: 20px;
@@ -867,19 +901,17 @@ color: white;
 }
 
 .project-card:hover{
-  box-shadow: 0px 8px 12px rgb(172, 112, 39);
+  box-shadow: 0px 8px 12px rgb(10, 10, 10);
   transition: all .5s ease;
  
-  transform: translate(20px,-20px);
-  background-color: rgb(252, 253, 253);
-  color: rgb(253, 137, 4);
+  
   
 }
 .project-card p{
   font-family: "Karla", sans-serif;
   font-weight: 600;
   font-size: 18.5px;
-  color: rgb(2, 2, 2);
+  color: rgb(12, 12, 12);
   
 }
 .project-card::before{

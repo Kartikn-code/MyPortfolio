@@ -1,9 +1,11 @@
 .experience {
     padding: 2rem;
-    background:linear-gradient(to right,#ff7e5f,#feb47b);
-    height: 100lvh;
+    background:linear-gradient(to right,#000000,#8b62c5,#242121);
+    height: max-content;
     margin-top: 20px;
+    width: 100%;
     border-radius: 20px;
+
     
   }
   
@@ -11,39 +13,50 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    height: 600px;
+    height: max-content;
   }
   
   .experience-item {
     display: flex;
     align-items: center;
-    background: linear-gradient(130deg, #ffffff 90%, #3f83b4 10%);
+    height: max-content;
+    width: 100%;
+
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+
     transition: transform 0.3s;
   }
   
   .experience-item:hover {
     transform: scale(1.02);
+    box-shadow:0px 12px 10px black;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    backdrop-filter: blur(10px) saturate(180%);
   }
   
   .experience-image {
-    width: 150px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
+    width: 120px; /* Adjust as needed */
+    height: 120px; /* Adjust as needed */
     object-fit: cover;
-    border-radius: 8px 0 0 8px;
+    margin: 40px;
+    border-radius: 50%;
   }
   
   .experience-content {
     padding: 1rem;
+    justify-content: center;
   }
+
   h1{
-    color: black;
+    color: rgb(254, 254, 254);
   }
   h2 {
-    text-align: center;
-    margin-bottom: 2rem;
+    color: #ffffff;
+    font-family: "Righteous", sans-serif;
+    font-size: 35px;
+    font-display: swap;
   }
   
   h3 {
@@ -52,10 +65,68 @@
   
   h4 {
     margin: 0.5rem 0;
-    color: #555;
+    color: #ffffff;
   }
-  
+  h5{
+    color: #ffffff;
+   
+  }
+  h6{
+    color: #ffffff;
+    font-family: "Prosto One", sans-serif;
+  }
   p {
     margin: 0.5rem 0;
-    color: #333;
+    color: #ffffff;
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+  }
+  .duration{
+    
+    margin-left: 600px;
+  
+  }
+
+  @media (max-width: 768px) {
+   
+    .experience img{
+      width: 100px;
+      height: 100px;
+    }
+    h1{
+      font-size: 25px;
+    }
+  
+    h2{
+      font-size: 25px;
+      text-align: center;
+     
+    }
+    p{
+      font-size: 18px;
+      width: 100%;
+      
+      justify-content: center;
+    }
+    .experience-item{
+      flex-direction: column;
+      height: 100%;
+     
+    
+      
+    }
+    .experience-content{
+      width: 100%;
+    }
+
+    .experience{
+      padding: 20px;
+      height: max-content;}
+
+  .duration{
+    
+  
+  flex-direction: column;
+  
+  }
   }

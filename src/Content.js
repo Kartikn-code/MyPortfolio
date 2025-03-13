@@ -5,10 +5,12 @@ import { Link } from 'react-scroll';
 
 
 
+
 const Content = () => {
   return (
     
     <section className='content container w-100'>
+     
        <h1  className='container-fluid col-* justify-content-center text-center fs-10 fs-sm-1 ' data-aos="zoom-in">Full Stack Developer and a little bit of <span className='content1'>Everything</span></h1>
        <div className="🤚 container text-center justify-content-center col-lg-12 col-md-12 col-sm-12">
 	<div class="👉"></div>

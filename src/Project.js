@@ -10,8 +10,8 @@ const projects = [
 
 const ProjectSection = () => {
     return (
-        <section className="projects" >
-            <h1 style={{color:"#111",fontSize:"5rem"}}>Projects</h1>        
+        <section className="projects container" >
+            <h1>Projects</h1>        
             <div className="project-section" data-aos="zoom-in">
             {projects.map(project => (
                 <a href={project.link} target='blank' style={{textDecoration:"none"}}> 
