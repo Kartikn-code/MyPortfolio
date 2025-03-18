@@ -1,12 +1,15 @@
 .experience {
     padding: 2rem;
-    background:linear-gradient(to right,#000000,#8b62c5,#242121);
-    height: max-content;
+    /* background:linear-gradient(to right,#000000,#8b62c5,#242121); */
+  
     margin-top: 20px;
     width: 100%;
     border-radius: 20px;
-
+    background-color: #ffffff;
+    box-shadow: 0px 6px 8px black;
+    height: max-content;
     
+
   }
   
   .experience-list {
@@ -32,8 +35,9 @@
     transform: scale(1.02);
     box-shadow:0px 12px 10px black;
     transition: all 0.3s ease-in-out;
-    background-color: transparent;
-    backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgb(197, 200, 203);
+    backdrop-filter: blur(400px) brightness(200%);
+    color: rgb(0, 0, 0);
   }
   
   .experience-image {
@@ -48,41 +52,48 @@
     padding: 1rem;
     justify-content: center;
   }
+ 
 
   h1{
-    color: rgb(254, 254, 254);
+    color: #004b89;
   }
   h2 {
-    color: #ffffff;
+    color: #004b89;
     font-family: "Righteous", sans-serif;
     font-size: 35px;
     font-display: swap;
   }
   
   h3 {
-    margin: 0;
+   
+    font-family: "Montserrat";
+    font-weight: 600;
   }
   
   h4 {
     margin: 0.5rem 0;
-    color: #ffffff;
+    color: #040404;
   }
   h5{
-    color: #ffffff;
+    color: #000000;
    
   }
   h6{
-    color: #ffffff;
-    font-family: "Prosto One", sans-serif;
+    color: #090909;
+    font-family: "Roboto", sans-serif;
+  font-weight: 900;
   }
   p {
     margin: 0.5rem 0;
-    color: #ffffff;
-    font-family: "Righteous", sans-serif;
+    color: #000000;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
     font-size: 25px;
+    width: 100%;
+    height: max-content;
   }
   .duration{
-    
+    margin-top: -20px;
     margin-left: 600px;
   
   }
@@ -101,6 +112,12 @@
       font-size: 25px;
       text-align: center;
      
+    }
+    h5{
+      text-align: center;
+    }
+    h6{
+      text-align: center;
     }
     p{
       font-size: 18px;
@@ -130,3 +147,30 @@
   
   }
   }
+  @media (max-width: 768px){
+    .experience-item p{
+      
+      font-size: 20px;
+      width: 100%;
+      
+    }
+    h3{
+      font-size: 30px;
+      text-align: center;
+    }
+    h4{font-size: 25px;}
+    h5{
+      font-size: 25px;
+    }
+    h6{}
+    p{
+      font-size: 20px;
+      width: 100%;
+    }
+    }
+  
+
+    img:hover{
+      transform:translate(10px,-10px);
+      transition:all .5s ease;
+    }

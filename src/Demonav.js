@@ -14,7 +14,7 @@ const Navbar = () => {
         
         <nav className="navbar">
             <div>
-        <img src="   https://cdn-icons-png.flaticon.com/512/16316/16316121.png " width="70px" height="70px" alt="" title="" class="img-small"></img>   
+        <img src="https://cdn-icons-png.flaticon.com/128/4926/4926554.png" width="70px" height="70px" alt="" title="" class="img-small"></img>   
       </div>
             <div className="navbar-container">
                
@@ -24,7 +24,7 @@ const Navbar = () => {
                     <span className={`bar ${isOpen ? 'active' : ''}`}></span>
                 </div>
                 <ul className={`navbar-menu ${isOpen ? 'active' : ''}`}>
-                   <Link to="content" smooth={true} duration={10}>Home</Link>
+                        <Link to="content" smooth={true} duration={10}>Home</Link>
                          <Link to="aboutme" smooth={true} duration={10}>About Me</Link>
                          <Link to="skills" smooth={true} duration={10}>Skills</Link>
                          <Link to="projects" smooth={true} duration={10}>Projects</Link>

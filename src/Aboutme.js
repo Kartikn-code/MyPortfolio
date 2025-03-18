@@ -1,5 +1,6 @@
 import React from 'react'
-import profile from './images/1000079546.jpg'
+// import profile from './images/1000079546.jpg';
+import logo from './images/profile.jpg';
 
 import resume from './images/KARTHIKEYAN S-resume (2).pdf'
 
@@ -93,7 +94,7 @@ const Aboutme = () => {
            
       <div className='img-btn'>
                   <div className='profile justify-content-center' data-aos="fade-up">
-                <img src={profile} alt='profile' width="300px" height="280px" data-aos="zoom-out"></img>
+                <img src={logo} alt='profile' width="300px" height="280px" data-aos="zoom-out"></img>
                 </div>
                 
         </div>

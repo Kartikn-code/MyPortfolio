@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 import Aboutme from './Aboutme';
 import Skills from './Skills';
-// import Chart from './Chart';
+
 
 
 import BubbleEffect from './BubbleEffect';
@@ -22,10 +22,12 @@ import Content from './Content';
 
 
 
+
+
+
 function App() {
   return (
   <div>
-    
  <BubbleEffect />
   <Demonav />
   <Content />
@@ -37,6 +39,11 @@ function App() {
   {/* <GitHubStats /> */}
   <Experience />
   <Contact />
+
+
+
+
+
   
   
   
