@@ -8,6 +8,7 @@
     background-color: #ffffff;
     box-shadow: 0px 6px 8px black;
     height: max-content;
+    position:relative;
     
 
   }
@@ -98,6 +99,20 @@
   
   }
 
+  .experience::before{
+    content: "";
+  position: absolute;
+  right:0;
+    margin-top:-15px;
+  bottom:10;
+  width: 170px;
+  height: 40px;
+  background-color:rgb(255, 147, 5);
+  box-shadow:0px 5px 6px black;
+  border-radius:20px 0px 0px 20px ;
+mix-blend-mode:multiply;
+  }
+
   @media (max-width: 768px) {
    
     .experience img{
@@ -174,3 +189,35 @@
       transform:translate(10px,-10px);
       transition:all .5s ease;
     }
+
+    @media (width: 820px){
+      p{
+        max-width:400px;
+        font-size:20px;
+      }
+      button{
+        margin-right: 220px;      }
+    
+    h6{
+      width:400px;
+      margin-right:20px;
+    }
+    
+    
+      }
+
+      @media (width: 912px){
+        p{
+          max-width:400px;
+          font-size:20px;
+        }
+        button{
+          margin-right: 220px;      }
+      
+      h6{
+        width:400px;
+        margin-right:20px;
+      }
+      
+      
+        }

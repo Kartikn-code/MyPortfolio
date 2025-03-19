@@ -57,7 +57,7 @@ const Experience = () => {
                 </div>
                 
               
-              <h6>{exp.Technologies}</h6>
+              {/* <h6>{exp.Technologies}</h6> */}
               <p>{exp.description}</p>
               <div className='work-btn'>
                

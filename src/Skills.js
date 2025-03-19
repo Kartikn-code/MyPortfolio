@@ -117,7 +117,7 @@ const SkillLogos = () => {
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: '#6ae8b6 ',
+      backgroundColor: '#ff8b00 ',
       color: 'black',
       borderRadius: '20px',
       transition:"all + '0.3s ease'"
