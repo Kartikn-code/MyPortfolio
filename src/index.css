@@ -200,6 +200,7 @@ p span{
   box-shadow:0px 5px 6px black;
   border-radius:0px 20px 20px 0px ;
 mix-blend-mode:multiply;
+margin-left:-20px;
 
 
 
@@ -691,41 +692,9 @@ font-weight:600;
   margin-top: 20px;
 }
 
-/* graph charts here */
 
-svg.recharts-surface {
-  margin: 20px;
-  max-height: 600px;
-  text-align: center;
-  border-radius: 20px;
-  /* background: transparent;
-  backdrop-filter: blur(4000px); */
-  /* background: linear-gradient(5deg, #8acba662 10%, #7dadc481 20%,#69c1bdb6 10%); */
- 
-  padding: 10px;
-  filter: brightness(200%);
-  filter: contrast(100%);
-  font-family: "Bebas Neue", serif;
-  box-shadow: 0px 0px 10px 9px rgb(177, 173, 173);
-  
-}
-.graph h1{
-  font-size: 80px;
-  font-family: "Bebas Neue", serif;
-  font-weight: 200;
-  justify-content: center;
-  text-align: center;
-}
-svg.recharts-surface {
-  margin-left: 20px;
-  margin-top: 40px  ;
-}
-/* svg.recharts-surface:hover{
-  transform: translate(10px,-10px);
-  transition: all 0.5s ease;
-  filter: brightness(200%);
-  filter: contrast(300%);
-} */
+
+
 
 /* projects code here */
 .projects::before{
@@ -810,7 +779,20 @@ display: block;
 section{
   padding: 20px;
 }
+.projects::before{
+  content: "";
+  position: absolute;
+  right:20;
+margin-top:10px;
 
+  bottom:30;
+  width: 170px;
+  
+  background-color:rgb(255, 147, 5);
+  box-shadow:0px 5px 6px black;
+  
+mix-blend-mode:multiply;
+}
 body{
   background-size:1460px 900px; 
 }
@@ -826,10 +808,21 @@ body{
     top:89%;
     left:-20%;
   }
+  .projects::before{
+    height:150px;
+    width:150px;
+    border-radius:50% 20% 80%;
+    opacity:0.4;
+    margin-top:-25px;
+    margin-left:-80px;
+  }
 }
-@media(max-width:375px){
+@media(max-width:380px){
   body{
     background-size:1460px 1190px;
+  }
+  .aboutme::before{
+    margin-top:200px;
   }
 }
 @media(min-width:820px){
@@ -923,49 +916,6 @@ margin-top: 20px;
 img{
   border-radius: 20px;
 }
-.achievements h1{
-font-family: "Bebas Neue", serif;
-font-size: 80px;
-text-align: center;
-color: rgb(255, 254, 254);
-padding: 20px;
-}
-.achievements{
-background: linear-gradient(#cdcdd4a4,#4a54de,#5c1fac);
-backdrop-filter: blur(400px);
-box-shadow: 0px 20px 40px rgb(0, 0, 0) ;
-border-radius: 20px;
-  
-  height: 100lvh;
-}
-
-.github-section{
-
-
-  border-radius: 20px;
-  padding: 20px;
-  width: 100%;
-  height:max-content;
-  display: flex;
-scale: 0.9;
-font-size: 20px;
-  flex-direction: column;
-  
-}
-.github-section img{
-  margin-top: 20px;
-}
-.github-section h2{
-  font-family: "Bebas Neue", serif;
-
-}
-.github{
-  
-  box-shadow: 0px 20px 40px rgb(0, 0, 0) ;
-  border-radius: 20px;
-    margin-top: 20px;
-    height: max-content;
-}
 
 /* demo link 
  */
@@ -985,7 +935,8 @@ font-size: 20px;
 }
 
 .project-card {
-background: rgb(126, 147, 219);
+/* background: rgb(126, 147, 219); */
+background:linear-gradient(45deg,rgb(240, 137, 11),rgba(163, 157, 157, 0.17));
 backdrop-filter: blur(400px);
 color: white;
  
@@ -997,7 +948,8 @@ color: white;
   max-width: 600px;
   position: relative;
   overflow: hidden;
-  height:250px; /* Limit the width of each card */
+  height:max-content;
+  /* height:250px; Limit the width of each card */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
@@ -1018,12 +970,12 @@ color: white;
 .project-card::before{
   content: "";
   position: absolute;
-  bottom: -30px; /* Adjust position */
-  right: -40px; /* Adjust position */
+  top: -20px; /* Adjust position */
+  right: -60px; /* Adjust position */
   width: 120px; /* Circle size */
   height: 120px; /* Circle size */
-  background-color: rgba(255, 255, 255, 0.857);
-  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 0px 100px;
   
  
   
@@ -1043,6 +995,7 @@ color: white;
     font-weight: 600;
     
   }
+ 
 }
 
 
@@ -1063,4 +1016,12 @@ color: white;
   margin-left: 150px;
   transition: all .5s ease;
  
+}
+
+.Education{
+  height: 100vh;
+  width: 100vw;
+  background-color:#f8f8f8;
+  border-radius: 20px;
+  margin-top:20px;
 }

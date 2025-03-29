@@ -81,8 +81,15 @@
   }
   h6{
     color: #090909;
-    font-family: "Roboto", sans-serif;
-  font-weight: 900;
+    font-family: "Montserrat";
+    font-weight: 600;
+
+  font-size:18px;
+ 
+  width:max-content;
+  border-radius: 20px;
+    
+    
   }
   p {
     margin: 0.5rem 0;
@@ -112,6 +119,23 @@
   border-radius:20px 0px 0px 20px ;
 mix-blend-mode:multiply;
   }
+.tech-stack{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+    list-style-type:none;
+    padding-inline-start: 0px;
+
+}
+.tech-stack li{
+    background-color: #e5f709;
+    padding: 10px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight:600;
+    font-family:"Montserrat";
+}
 
   @media (max-width: 768px) {
    
@@ -162,6 +186,17 @@ mix-blend-mode:multiply;
   
   }
   }
+  @media (width: 781px){
+    p{
+      width:400px;
+    }
+  }
+  @media(min-width:760px) and (max-width:780px){
+    p{
+      width:400px;
+    }
+  }
+    
   @media (max-width: 768px){
     .experience-item p{
       
@@ -177,7 +212,9 @@ mix-blend-mode:multiply;
     h5{
       font-size: 25px;
     }
-    h6{}
+    h6{
+      font-size: 20px;
+    }
     p{
       font-size: 20px;
       width: 100%;

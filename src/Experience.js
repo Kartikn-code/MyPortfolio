@@ -11,7 +11,7 @@ const Experience = () => {
       duration: 'Sept 2024 - Jan 2025',
       description: 'I developed a working e-commerce Web Site called "BuyMe" using WordPress and WooCommerce. This project provided an online shopping experience, with the availability of many products through easy to navigate, responsive design. it even supports ajax search functions !.',
       image: 'https://gaotek.com/wp-content/uploads/2024/02/GAOTek-Logo-Final20-100x100-1.png', // Replace with your image path
-      Technologies: "WordPress  WooCommerce  HTML CSS  JavaScript  PHP  MySQL  REST API  Git",
+      Technologies: "'WordPress'  'WooCommerce' 'HTML' 'CSS'  'JavaScript', 'Ajax Search' 'PHP' 'MySQL'  'REST API'  'Git' 'Github'",
       animations: {
         initial: { opacity: 0, y: 20 },
         animate: { opacity: 1, y: 0 },
@@ -57,12 +57,30 @@ const Experience = () => {
                 </div>
                 
               
-              {/* <h6>{exp.Technologies}</h6> */}
+              
               <p>{exp.description}</p>
               <div className='work-btn'>
                
                  <button onClick={() => window.open('https://buymeorg.netlify.app/', '_blank')} style={{float:'right'}}><MdWork color='#004b89'size={40} /> </button>
               </div>
+              {/* <h6>{exp.Technologies}</h6> */}
+              <ul className='tech-stack'>
+               
+                <li>WordPress</li>
+                <li>WooCommerce</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Ajax Search</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>REST API</li>
+                <li>Git</li>
+                <li>Github</li>
+                
+              </ul>
+
+
             </div>
           </motion.div>
         ))}

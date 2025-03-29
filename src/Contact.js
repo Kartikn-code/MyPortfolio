@@ -1,32 +1,63 @@
 import React from 'react';
 import './Contact.css';
 
+
 const Contact = () => {
-  return (
-   <section className='contact container lg-12 md-12 sm-12 xs-12'>
-        <h1>Contact</h1>
-        
-
-        
-
-
-
-  <div class="form-container">
-      <form class="form">
-        <div class="form-group">
-          <label for="email">Your Email</label>
-          <input required="" name="email" id="email" type="text"></input>
+  return (  
+  <section id="contact" className="contact">
+    <div className="container">
+        <div className="section-title">
+            <h1>Get In Touch</h1>
+            <p>Let's discuss how I can help optimize your Needs</p>
         </div>
-        <div class="form-group">
-          <label for="textarea">How Can We Help You?</label>
-          <textarea required="" cols="50" rows="10" id="textarea" name="textarea">          </textarea>
+        <div className="contact-content">
+            <div className="contact-form">
+                <form>
+                    <div className="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name" />
+                    </div>
+                    <div className="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your email"/>
+                    </div>
+                    <div className="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Subject"/>
+                    </div>
+                    <div className="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" className="btn">Send Message</button>
+                </form>
+            </div>
+            <div className="contact-info">
+                <h3>Contact Information</h3>
+                <div className="contact-method">
+                    <div className="contact-icon">📧</div>
+                    <a href="mailto:ping2karti@gmail.com" target='blank'><p>ping2karti@gmail.com</p></a>
+                </div>
+                <div className="contact-method">
+                    <div className="contact-icon">📱</div>
+                    <p>(044 4690 3057)</p>
+                </div>
+                <div className="contact-method">
+                    <div className="contact-icon">🏢</div>
+                    <p>Plot No 44, Balaji Avenue 1st Street,
+                        <p>Iyyapanthangal,Chennai-600056</p>
+                        </p>
+                </div>
+                <div className="contact-method">
+                    <div className="contact-icon">⏰</div>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
         </div>
-        <button type="submit" class="form-submit-btn">Submit</button>
-      </form>
     </div>
-   </section>
-  )
-}
+</section>)
+
+    }
 
 export default Contact
 

@@ -1,4 +1,4 @@
-/* From Uiverse.io by omriluz */ 
+From Uiverse.io by omriluz 
 .form-container {
     width: 400px;
     background: linear-gradient(#212121, #212121) padding-box,
@@ -30,6 +30,11 @@
       background-position: 0% 50%;
     }
   }
+  @media (width:400px) {
+    .section-title p{
+      font-size: 10px;
+    }
+  }
   .contact{
     width: 100%;
     height: 100lvh;
@@ -44,7 +49,12 @@
     flex-direction: column;
     gap: 20px;
   }
-  
+  .section-title p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
   .form-container .form-group {
     display: flex;
     flex-direction: column;
@@ -54,7 +64,7 @@
   .form-container .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #717171;
+    color:rgb(0, 0, 0);
     font-weight: 600;
     font-size: 12px;
   }
@@ -66,7 +76,7 @@
     color: #fff;
     font-family: inherit;
     background-color: transparent;
-    border: 1px solid #414141;
+    border: 1px solidrgb(255, 255, 255);
   }
   
   .form-container .form-group textarea {
@@ -87,7 +97,7 @@
   
   .form-container .form-group input:focus {
     outline: none;
-    border-color: #e81cff;
+    border-color:rgb(0, 0, 0);
   }
   
   .form-container .form-group textarea:focus {
@@ -101,10 +111,10 @@
     justify-content: center;
     align-self: flex-start;
     font-family: inherit;
-    color: #717171;
+    color:rgb(255, 255, 255);
     font-weight: 600;
     width: 40%;
-    background: #313131;
+    background:rgb(255, 255, 255);
     border: 1px solid #414141;
     padding: 12px 16px;
     font-size: inherit;
@@ -171,3 +181,67 @@
     border-bottom-right-radius: 50px;
     width: 45px;
   }
+
+
+  .contact {
+    background-color: var(--dark);
+    color: white;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.contact-form {
+    background:linear-gradient(to right bottom, rgb(135, 88, 189),rgb(11, 43, 203));
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--secondary);
+}
+
+.contact-info h3 {
+    margin-bottom: 1.5rem;
+    color: var(--secondary);
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-icon {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: var(--secondary);
+}

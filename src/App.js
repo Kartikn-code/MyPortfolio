@@ -16,7 +16,7 @@ import Experience from './Experience';
 import Contact from './Contact';
 import Demonav from './Demonav';
 import Content from './Content';
-
+import Education from './Education';
 
 
 
@@ -33,6 +33,7 @@ function App() {
   <Content />
   <Aboutme />
   <Skills />
+  <Education />
   {/* <Chart /> */}
   <Projectsection />
   {/* <Carousal /> */}
