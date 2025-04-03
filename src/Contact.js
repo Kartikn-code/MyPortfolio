@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   return (  
@@ -52,9 +52,38 @@ const Contact = () => {
                     <div className="contact-icon">⏰</div>
                     <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
                 </div>
+                <div className="social-bar">
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <FaGithub className="icon github" />
+      </a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+        <FaLinkedin className="icon linkedin" />
+      </a>
+      <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <FaTwitter className="icon twitter" />
+      </a>
+      <a href="mailto:your.email@example.com">
+        <FaEnvelope className="icon email" />
+      </a>
+    </div>
+    
             </div>
         </div>
     </div>
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
 </section>)
 
     }

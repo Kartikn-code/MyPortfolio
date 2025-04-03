@@ -1,4 +1,6 @@
 From Uiverse.io by omriluz 
+
+
 .form-container {
     width: 400px;
     background: linear-gradient(#212121, #212121) padding-box,
@@ -38,6 +40,7 @@ From Uiverse.io by omriluz
   .contact{
     width: 100%;
     height: 100lvh;
+    
   }
   
   .form-container button:active {
@@ -244,4 +247,55 @@ a{
     margin-right: 1rem;
     font-size: 1.5rem;
     color: var(--secondary);
+}
+/* Animated gradient background */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size:20px;
+  font-weight:bold;
+}
+.social-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height:80px;
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 250px;
+  margin: 20px auto;
+
+  /* Interactive Gradient */
+  background: linear-gradient(45deg, #ff6b6b, #ffcc5c, #1d8cf8, #6a11cb);
+  background-size: 300% 300%;
+  animation: gradientAnimation 6s ease infinite;
+}
+
+/* Icon styles */
+.icon {
+  font-size: 36px;
+  color: #111;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effects */
+.github:hover { color: #6e5494; transform: scale(1.2); }
+.linkedin:hover { color: #0077b5; transform: scale(1.2); }
+.twitter:hover { color: #1da1f2; transform: scale(1.2); }
+.email:hover { color: #ff6b6b; transform: scale(1.2); }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .social-bar {
+    gap: 10px;
+    padding: 8px;
+  }
+  .icon {
+    font-size: 22px;
+  }
 }
