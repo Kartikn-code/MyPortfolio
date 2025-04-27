@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const MagicBrush = () => {
   const [stars, setStars] = useState([]);
@@ -7,19 +7,21 @@ const MagicBrush = () => {
     const newStar = {
       id: Date.now() + Math.random(),
       x: e.clientX,
-      y: e.clientY
+      y: e.clientY,
     };
     setStars((prevStars) => [...prevStars, newStar]);
 
     // Remove the star after 1.5 seconds for a longer twinkle effect
     setTimeout(() => {
-      setStars((prevStars) => prevStars.filter((star) => star.id !== newStar.id));
+      setStars((prevStars) =>
+        prevStars.filter((star) => star.id !== newStar.id)
+      );
     }, 1500);
   };
 
   useEffect(() => {
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   return (
@@ -31,7 +33,7 @@ const MagicBrush = () => {
           style={{
             top: `${star.y}px`,
             left: `${star.x}px`,
-            boxShadow: '0 0 8px #fff, 0 0 20px #9d4edd, 0 0 30px #5a189a'
+            boxShadow: "0 0 8px #fff, 0 0 20px #9d4edd, 0 0 30px #5a189a",
           }}
         />
       ))}

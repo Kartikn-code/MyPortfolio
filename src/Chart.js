@@ -1,36 +1,51 @@
-
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
-
-
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
 const data = [
-  { name: 'HTML', Skills: 100 },
-  { name: 'CSS', Skills: 90 },
-  { name: 'JavaScript', Skills: 60 },
-  { name: 'React', Skills: 50 },
-  {name: 'SQl',Skills:70},
-  {name:'VS-code',Skills:100},
-  {name:'django',Skills:70},
-  {name:'Git-Hub',Skills:90}
+  { name: "HTML", Skills: 100 },
+  { name: "CSS", Skills: 90 },
+  { name: "JavaScript", Skills: 60 },
+  { name: "React", Skills: 50 },
+  { name: "SQl", Skills: 70 },
+  { name: "VS-code", Skills: 100 },
+  { name: "django", Skills: 70 },
+  { name: "Git-Hub", Skills: 90 },
 ];
 
 export default function StyledChart() {
   return (
-   
-    <div data-aos="flip-up"  className="graphccontainer-fluid fs-lg-1 fs-md-2 fs-sm-3 col-lg-12 col-md-12 col-sm-12 text-center justify-content-center "style={{ width: '60%', margin: '20px auto' }}>  {/* Controls overall width */}
-    <div></div>
-    <ResponsiveContainer width="90%" height={300}>
-      <LineChart data={data}>
-        <CartesianGrid stroke="tranparent" strokeDasharray="3 3" />
-        <XAxis dataKey="name" stroke="#111"  />
-        <YAxis stroke="#111"  />
-        <Tooltip />
-        <Legend />
-        <Line type="monotype" dataKey="Skills" stroke="#9125d8" strokeWidth={6}  />
-      </LineChart>
-    </ResponsiveContainer>
-  </div>
+    <div
+      data-aos="flip-up"
+      className="graphccontainer-fluid fs-lg-1 fs-md-2 fs-sm-3 col-lg-12 col-md-12 col-sm-12 text-center justify-content-center "
+      style={{ width: "60%", margin: "20px auto" }}
+    >
+      {" "}
+      {/* Controls overall width */}
+      <div></div>
+      <ResponsiveContainer width="90%" height={300}>
+        <LineChart data={data}>
+          <CartesianGrid stroke="tranparent" strokeDasharray="3 3" />
+          <XAxis dataKey="name" stroke="#111" />
+          <YAxis stroke="#111" />
+          <Tooltip />
+          <Legend />
+          <Line
+            type="monotype"
+            dataKey="Skills"
+            stroke="#9125d8"
+            strokeWidth={6}
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
   );
 }
 
@@ -99,7 +114,6 @@ export default function StyledChart() {
 // };
 
 // export default SkillsDashboard;
-
 
 // import React, { useState } from 'react';
 // import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
@@ -202,15 +216,15 @@ export default function StyledChart() {
 //           </button>
 //         </nav>
 
-//         <div 
+//         <div
 //           className={`transition-opacity duration-500 ${
 //             activeSection === 'skills' ? 'opacity-100' : 'opacity-0 hidden'
 //           }`}
 //         >
 //           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 //             {skillsData.map((skill, index) => (
-//               <div 
-//                 key={index} 
+//               <div
+//                 key={index}
 //                 className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 flex flex-col items-center hover:transform hover:scale-105 transition-all duration-300 border border-gray-700 hover:border-blue-500/50 shadow-lg hover:shadow-blue-500/10"
 //                 data-tooltip-id={`skill-tooltip-${index}`}
 //                 data-tooltip-content={`${skill.percentage}% Proficiency`}
@@ -237,15 +251,15 @@ export default function StyledChart() {
 //           </div>
 //         </div>
 
-//         <div 
+//         <div
 //           className={`transition-opacity duration-500 ${
 //             activeSection === 'experience' ? 'opacity-100' : 'opacity-0 hidden'
 //           }`}
 //         >
 //           <div className="space-y-8">
 //             {experienceData.map((exp, index) => (
-//               <div 
-//                 key={index} 
+//               <div
+//                 key={index}
 //                 className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 hover:transform hover:translate-x-2 transition-all duration-300 border border-gray-700 hover:border-blue-500/50 shadow-lg hover:shadow-blue-500/10"
 //               >
 //                 <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
@@ -265,15 +279,15 @@ export default function StyledChart() {
 //           </div>
 //         </div>
 
-//         <div 
+//         <div
 //           className={`transition-opacity duration-500 ${
 //             activeSection === 'certifications' ? 'opacity-100' : 'opacity-0 hidden'
 //           }`}
 //         >
 //           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 //             {certificationsData.map((cert, index) => (
-//               <div 
-//                 key={index} 
+//               <div
+//                 key={index}
 //                 className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 hover:transform hover:rotate-1 transition-all duration-300 border border-gray-700 hover:border-purple-500/50 shadow-lg hover:shadow-purple-500/10"
 //               >
 //                 <div className="flex justify-between items-start">
