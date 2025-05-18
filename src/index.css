@@ -6,24 +6,37 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background:linear-gradient(60deg, rgb(24, 2, 104) 10%, rgba(57, 45, 134, 0.843) 40%, #5449a0, #5e369f, #7c72ac, #030304a4); */
+<<<<<<< HEAD
   /* background: radial-gradient(
+=======
+  background: radial-gradient(
+>>>>>>> origin/master
     circle,
     rgba(40, 38, 41, 0.97),
     rgba(56, 55, 58, 0.76),
     #111
+<<<<<<< HEAD
   ); */
   background: linear-gradient(
     rgba(251, 247, 247, 0) 20%,
     rgb(230, 137, 15) /* rgba(235, 94, 13, 0.96) */
+=======
+>>>>>>> origin/master
   );
   /* background:linear-gradient(to right,#111,#8b62c5,#242121); */
   /* background:radial-gradient(circle, rgba(0, 0, 0, 0.75),rgb(239, 83, 11)); */
   background-size: 1460px 1080px;
   background-repeat: no-repeat;
+<<<<<<< HEAD
 
   margin: 20px;
 }
 
+=======
+  margin: 20px;
+}
+
+>>>>>>> origin/master
 html {
   scroll-behavior: smooth;
 }
@@ -169,7 +182,11 @@ img {
 .aboutme {
   display: flex;
   padding: 20px;
+<<<<<<< HEAD
   height: 100%;
+=======
+  height: 90vh;
+>>>>>>> origin/master
   width: auto;
   margin: auto;
 
@@ -379,10 +396,17 @@ img {
   font-family: "Great Vibes", serif;
   background-image: linear-gradient(
     320deg,
+<<<<<<< HEAD
     rgb(10, 10, 10),
     rgb(232, 29, 107),
     rgb(246, 107, 8),
     rgb(0, 0, 0)
+=======
+    rgb(98, 101, 104),
+    rgb(232, 29, 107),
+    rgb(223, 226, 226),
+    rgb(222, 227, 229)
+>>>>>>> origin/master
   );
 
   background-clip: text;
@@ -748,7 +772,24 @@ ul.example-2.container.col-12 {
   section {
     padding: 20px;
   }
+<<<<<<< HEAD
 
+=======
+  .projects::before {
+    content: "";
+    position: absolute;
+    right: 20;
+    margin-top: 10px;
+
+    bottom: 30;
+    width: 170px;
+
+    background-color: rgb(255, 147, 5);
+    box-shadow: 0px 5px 6px black;
+
+    mix-blend-mode: multiply;
+  }
+>>>>>>> origin/master
   body {
     background-size: 1460px 900px;
   }
@@ -757,6 +798,7 @@ ul.example-2.container.col-12 {
       background-size: 1460px 1100px;
     }
     .aboutme::before {
+<<<<<<< HEAD
       height: 20px;
       width: 20px;
       border-radius: 50%;
@@ -778,6 +820,21 @@ ul.example-2.container.col-12 {
     }
     .skills::before {
       display: none;
+=======
+      height: 150px;
+      border-radius: 50%;
+      opacity: 0.4;
+      top: 89%;
+      left: -20%;
+    }
+    .projects::before {
+      height: 150px;
+      width: 150px;
+      border-radius: 50% 20% 80%;
+      opacity: 0.4;
+      margin-top: -25px;
+      margin-left: -80px;
+>>>>>>> origin/master
     }
   }
   @media (max-width: 380px) {
@@ -787,10 +844,13 @@ ul.example-2.container.col-12 {
     .aboutme::before {
       margin-top: 200px;
     }
+<<<<<<< HEAD
     .navbar-toggle {
       margin-top: -70px;
       margin-left: 38px;
     }
+=======
+>>>>>>> origin/master
   }
   @media (min-width: 820px) {
     body {
